@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Балканский Маршрут | Интерактивная история</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Status Bar -->
+        <div id="ui-layer">
+            <div class="stat-box">
+                <span>💰</span>
+                <span id="stat-money" class="stat-value">5000 €</span>
+            </div>
+            <div class="stat-box">
+                <span>🧠</span>
+                <span id="stat-stress" class="stat-value">0%</span>
+            </div>
+            <div class="stat-box">
+                <span>📜</span>
+                <span id="stat-status" class="stat-value">Турист</span>
+            </div>
+        </div>
+
+        <div id="inventory-btn">🎒</div>
+
+        <!-- Main Narrative Panel -->
+        <div id="story-panel">
+            <div id="location-label">Калининград</div>
+            <div id="text-area">
+                Загрузка истории...
+            </div>
+            <div id="choices-area">
+                <!-- Choices will be injected here -->
+            </div>
+        </div>
+
+        <!-- Visual Elements -->
+        <div id="overlay-effects"></div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
